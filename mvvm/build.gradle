@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+
+group='com.github.android-yangkang'
+android {
+
+    compileSdkVersion 30
+
+    dataBinding {
+        enabled true
+    }
+    viewBinding {
+        enabled = true
+    }
+
+
+}
+
+dependencies {
+    //androidx
+    api "androidx.appcompat:appcompat:1.2.0"
+    api "androidx.core:core-ktx:1.3.2"
+    api "androidx.constraintlayout:constraintlayout:2.0.4"
+    api "com.google.android.material:material:1.2.1"
+    //lifecycle
+    api "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    //network
+    api "com.squareup.retrofit2:retrofit:2.9.0"
+    api "com.squareup.retrofit2:converter-gson:2.9.0"
+    //material-dialogs
+    api "com.afollestad.material-dialogs:lifecycle:3.1.1"
+    api "com.afollestad.material-dialogs:core:3.1.1"
+    //coil
+    api "io.coil-kt:coil:1.1.1" //图片加载
+    // utils 集合了大量常用的工具类
+    api "com.blankj:utilcodex:1.30.5"
+    //bindingcollectionadapter
+    api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:3.1.1"
+    api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:3.1.1"
+}
+

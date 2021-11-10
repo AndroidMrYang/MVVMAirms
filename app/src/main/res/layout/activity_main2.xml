@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.mvvmdemo.vm.MainViewModel2" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="MainActivity2"
+            app:titleTextColor="@color/white" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tb_project"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            app:items="@{viewModel.navTitle}"
+            app:tabBackground="@color/blue"
+            app:tabItemClick="@{viewModel.tabOnClickListener}"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_project"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gary"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </LinearLayout>
+</layout>
