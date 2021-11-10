@@ -27,7 +27,21 @@ dataBinding {
     enabled true
 }
 ```
+#### 1.2 依赖
+
+在主项目app的build.gradle中依赖
+
+```
+dependencies {
+    ...
+   implementation 'com.github.android-yangkang:MVVMAirms:v1.0.0'
+}
+```
+
+或者 下载到本地导入Module
+
 ### 2，快速开始
+
 #### 2.1Activity
 继承BaseActivity
 ```
