@@ -8,6 +8,8 @@ android {
 
     compileSdkVersion 30
 
+
+
     dataBinding {
         enabled true
     }
@@ -36,7 +38,7 @@ dependencies {
     //coil
     api "io.coil-kt:coil:1.1.1" //图片加载
     // utils 集合了大量常用的工具类
-    api "com.blankj:utilcodex:1.30.5"
+    api "com.blankj:utilcodex:1.30.6"
     //bindingcollectionadapter
     api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:3.1.1"
     api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:3.1.1"
