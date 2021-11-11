@@ -1,16 +1,26 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven' // 添加这个
 
 
 group='com.github.android-yangkang'
 android {
 
     compileSdkVersion 30
-
-
-
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
     buildFeatures  {
         dataBinding = true
         viewBinding = true
