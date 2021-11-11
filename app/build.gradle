@@ -81,5 +81,5 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     //MVVM
     implementation project(path: ':mvvm')
-   // implementation 'com.github.android-yangkang:MVVMAirms:v1.1.0'
+   //implementation 'com.github.android-yangkang:MVVMAirms:v1.1.4'
 }

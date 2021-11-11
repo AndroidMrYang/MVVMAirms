@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
 
 
 group='com.github.android-yangkang'
@@ -49,4 +49,4 @@ dependencies {
     api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:3.1.1"
     api   "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:3.1.1"
 }
-
+apply from: 'javadoc-sources-build.gradle'
