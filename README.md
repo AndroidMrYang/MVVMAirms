@@ -34,7 +34,7 @@ dataBinding {
 ```
 dependencies {
     ...
-   implementation 'com.github.android-yangkang:MVVMAirms:v1.0.3'
+   implementation 'com.github.android-yangkang:MVVMAirms:v1.0.5'
 }
 ```
 
