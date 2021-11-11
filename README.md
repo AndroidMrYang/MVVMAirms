@@ -13,7 +13,6 @@
 
 [material-dialogs](https://github.com/afollestad/material-dialogs)：弹窗
 
-~~[glide](https://github.com/bumptech/glide)：图片加载(弃用1.0.5)~~
 
 [coil](https://github.com/coil-kt/coil)：图片加载(更适合KT的图片加载)
 
