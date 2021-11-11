@@ -1,4 +1,4 @@
-package com.yangk.mvvm.binding.observable
+package com.yangk.mvvm.core.binding.observable
 
 import androidx.databinding.ObservableField
 

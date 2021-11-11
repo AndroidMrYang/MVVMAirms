@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.yangk.mvvm.base.BaseViewModel
 import com.example.mvvmdemo.entity.UserInfo
 import com.example.mvvmdemo.http.NetWork
-import com.yangk.mvvm.binding.observable.StringObservableField
+import com.yangk.mvvm.core.binding.observable.StringObservableField
 
 /**
  *   @author : Yangk

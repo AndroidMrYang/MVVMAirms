@@ -1,4 +1,4 @@
-package com.yangk.mvvm.binding.adapter
+package com.yangk.mvvm.core.adapter
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

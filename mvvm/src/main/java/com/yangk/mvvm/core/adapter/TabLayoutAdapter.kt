@@ -1,4 +1,4 @@
-package com.yangk.mvvm.binding.adapter
+package com.yangk.mvvm.core.adapter
 
 import androidx.databinding.BindingAdapter
 import com.google.android.material.tabs.TabLayout
