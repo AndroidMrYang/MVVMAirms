@@ -6,7 +6,6 @@ import com.yangk.mvvm.base.BaseApplication
 import com.yangk.mvvm.base.ViewModelFactory
 import com.blankj.utilcode.util.LogUtils
 import com.example.mvvmdemo.BuildConfig
-import com.squareup.leakcanary.LeakCanary
 
 class App : BaseApplication() {
 
@@ -18,10 +17,10 @@ class App : BaseApplication() {
         })
 
 
-        //内存泄漏检测
+/*        //内存泄漏检测
         if (!LeakCanary.isInAnalyzerProcess(this)) {
             LeakCanary.install(this)
-        }
+        }*/
 
         LogUtils.getConfig().run {
             isLogSwitch = BuildConfig.DEBUG

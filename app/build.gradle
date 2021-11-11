@@ -67,10 +67,12 @@ dependencies {
     testImplementation rootProject.ext.dependencies["junit"]
     androidTestImplementation rootProject.ext.dependencies["espresso-core"]
     androidTestImplementation rootProject.ext.dependencies["junitTest"]
+/*
     //内存泄漏测试
     debugImplementation rootProject.ext.dependencies["canary"]
     debugImplementation rootProject.ext.dependencies["canary-fragment"]
 
+*/
 
 
    // implementation 'com.github.android-yangkang:MVVMAirms:v1.0.1'

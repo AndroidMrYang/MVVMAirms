@@ -75,7 +75,7 @@ class MainViewModel2 : BaseViewModel() {
      * 用Flow流的方式
      * 操作符比较繁琐
      * */
-    fun getFirstData() {
+  /*  fun getFirstData() {
 
         launchUI {
             launchFlow { netWork.getNaviJson() }
@@ -100,5 +100,5 @@ class MainViewModel2 : BaseViewModel() {
                     if (it.isSuccess()) items.value = it.data.datas
                 }
         }
-    }
+    }*/
 }
