@@ -1,6 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.yangk.mvvm">
-
-
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yangk.mvvm">
+    <application>
+    <provider
+        android:authorities="${applicationId}.fireproof"
+        android:name="androidx.core.content.FileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true"
+        tools:ignore="WrongManifestParent">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/provider_paths" />
+    </provider>
+    </application>
 
 </manifest>
