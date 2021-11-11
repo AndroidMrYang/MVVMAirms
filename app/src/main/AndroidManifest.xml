@@ -31,12 +31,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- AutoSize -->
-        <meta-data
+<!--        <meta-data
             android:name="design_width_in_dp"
             android:value="360" />
         <meta-data
             android:name="design_height_in_dp"
-            android:value="640" />
+            android:value="640" />-->
 
         <provider
             android:name="androidx.core.content.FileProvider"
