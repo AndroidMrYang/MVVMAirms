@@ -226,18 +226,18 @@ class LoggingInterceptor(
 
         private fun isPlain(mediaType: MediaType?): Boolean {
             return if (mediaType?.subtype() == null) false else mediaType.subtype()
-                .lowercase(Locale.ROOT).contains("plain")
+                .toLowerCase(Locale.ROOT).contains("plain")
         }
 
         fun isJson(mediaType: MediaType?): Boolean {
             return if (mediaType?.subtype() == null) false else mediaType.subtype()
-                .lowercase(Locale.ROOT).contains("json")
+                .toLowerCase(Locale.ROOT).contains("json")
         }
 
 
         private fun isForm(mediaType: MediaType?): Boolean {
             return if (mediaType?.subtype() == null) false else mediaType.subtype()
-                .lowercase(Locale.ROOT).contains("x-www-form-urlencoded")
+                .toLowerCase(Locale.ROOT).contains("x-www-form-urlencoded")
         }
 
         private fun convertCharset(charset: Charset?): String {
